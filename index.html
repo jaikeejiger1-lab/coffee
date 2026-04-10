@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aurelia Coffee — Premium artisan coffee, ethical sourcing, master roasting. Farm-to-cup excellence in an elegant urban sanctuary.">
-    <title>AURELIA COFFEE • Artisan Roasts • Farm to Cup</title>
+    <meta name="description" content="SWEGER Coffee — Premium artisan coffee, ethical sourcing, master roasting. Farm-to-cup excellence in an elegant urban sanctuary.">
+    <title>Jaikee Jiger • Premium Coffee Experience</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&amp;family=Inter:wght@300;400&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap');
         
         :root {
             --deep-brown: #2C1F1A;
@@ -95,18 +95,15 @@
     </style>
 </head>
 <body class="tail-container bg-[#2C1F1A] text-[#F8F1E9]">
-    <!-- NAVBAR -->
     <nav class="navbar fixed top-0 left-0 right-0 z-50 border-b border-[#C9A77B]/10">
         <div class="max-w-screen-2xl mx-auto">
             <div class="px-8 py-5 flex items-center justify-between">
-                <!-- Logo -->
                 <div class="flex items-center gap-x-3">
                     <div class="w-8 h-8 rounded-full bg-[#C9A77B] flex items-center justify-center text-[#2C1F1A] text-xl font-bold">☕</div>
-                    <h1 class="heading-font text-3xl tracking-[-1px] text-[#F8F1E9]">AURELIA</h1>
+                    <h1 class="heading-font text-3xl tracking-[-1px] text-[#F8F1E9]">SWEGER</h1>
                     <span class="text-[#C9A77B] text-xs font-medium tracking-[2px] mt-1">COFFEE</span>
                 </div>
 
-                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-x-10 text-sm font-medium uppercase tracking-widest">
                     <a onclick="navigateTo('home')" class="cursor-pointer hover:text-[#C9A77B] flex items-center gap-x-1" data-page="home">
                         HOME
@@ -121,11 +118,10 @@
                         GALLERY
                     </a>
                     <a onclick="navigateTo('shop')" class="cursor-pointer hover:text-[#C9A77B] flex items-center gap-x-1" data-page="shop">
-                        SHOP &amp; CONTACT
+                        SHOP & CONTACT
                     </a>
                 </div>
 
-                <!-- Right side actions -->
                 <div class="flex items-center gap-x-6">
                     <div onclick="toggleCart()" class="flex items-center cursor-pointer hover:text-[#C9A77B]">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,7 +130,6 @@
                         <span id="cart-count" class="ml-1 text-xs bg-[#C9A77B] text-[#2C1F1A] px-1.5 rounded-full">0</span>
                     </div>
                     
-                    <!-- Mobile Hamburger -->
                     <button onclick="toggleMobileMenu()" class="md:hidden text-[#F8F1E9] hover:text-[#C9A77B]">
                         <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -143,35 +138,24 @@
                 </div>
             </div>
             
-            <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden px-8 py-6 bg-[#2C1F1A] border-t border-[#C9A77B]/10">
                 <div class="flex flex-col gap-y-6 text-sm font-medium uppercase tracking-widest">
                     <a onclick="navigateTo('home');toggleMobileMenu()" class="cursor-pointer hover:text-[#C9A77B]">HOME</a>
                     <a onclick="navigateTo('about');toggleMobileMenu()" class="cursor-pointer hover:text-[#C9A77B]">ABOUT US</a>
                     <a onclick="navigateTo('menu');toggleMobileMenu()" class="cursor-pointer hover:text-[#C9A77B]">MENU</a>
                     <a onclick="navigateTo('gallery');toggleMobileMenu()" class="cursor-pointer hover:text-[#C9A77B]">GALLERY</a>
-                    <a onclick="navigateTo('shop');toggleMobileMenu()" class="cursor-pointer hover:text-[#C9A77B]">SHOP &amp; CONTACT</a>
+                    <a onclick="navigateTo('shop');toggleMobileMenu()" class="cursor-pointer hover:text-[#C9A77B]">SHOP & CONTACT</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- HOME PAGE -->
     <section id="home-page" class="page min-h-screen flex items-center relative pt-20">
-        <!-- Hero Video Background -->
         <div class="absolute inset-0 z-0 overflow-hidden">
-            <!-- 
-                IMPORTANT: Replace the video src below with a high-quality slow-motion pour-over coffee video.
-                Recommended: Download a free 4K slow-motion pour-over from Pexels.com or Coverr.co
-                Example search: "slow motion pour over coffee" 
-                Keep the video muted, autoplay, loop, and playsinline.
-            -->
             <video id="hero-video" class="hero-video absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1541167760496-1628856ab772">
                 <source src="https://assets.mixkit.co/videos/12345/12345-small.mp4" type="video/mp4"> 
-                <!-- Placeholder src — replace with real video URL -->
                 Your browser does not support the video tag.
             </video>
-            <!-- Warm overlay gradient -->
             <div class="absolute inset-0 bg-gradient-to-b from-[#2C1F1A]/30 via-[#2C1F1A]/40 to-[#2C1F1A]/70"></div>
         </div>
 
@@ -179,7 +163,7 @@
             <div class="max-w-2xl">
                 <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md text-[#C9A77B] text-xs tracking-[1.5px] uppercase font-medium px-6 py-3 rounded-3xl mb-6 border border-[#C9A77B]/30">
                     <div class="w-2 h-2 bg-[#C9A77B] rounded-full animate-pulse"></div>
-                    ESTABLISHED 2018 • PORTLAND, OR
+                    ESTABLISHED BY JAIKEE JIGER • INDIA
                 </div>
                 
                 <h1 class="heading-font text-7xl md:text-8xl leading-none tracking-[-2px] text-[#F8F1E9] mb-6">
@@ -218,21 +202,17 @@
             </div>
         </div>
 
-        <!-- Scroll indicator -->
         <div class="absolute bottom-12 left-1/2 hidden md:flex flex-col items-center text-[#C9A77B]/70 text-xs tracking-widest">
             SCROLL TO EXPLORE
             <div class="mt-3 w-px h-12 bg-gradient-to-b from-transparent via-[#C9A77B]/70 to-transparent"></div>
         </div>
         
-        <!-- Brass accent line at bottom of hero -->
         <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A77B]/30 to-transparent"></div>
     </section>
 
-    <!-- ABOUT US PAGE -->
     <section id="about-page" class="page hidden min-h-screen pt-24 pb-16">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="grid md:grid-cols-12 gap-16 items-center">
-                <!-- Left text -->
                 <div class="md:col-span-7">
                     <div class="uppercase text-[#C9A77B] text-sm tracking-[2px] mb-4">OUR STORY</div>
                     <h2 class="heading-font text-6xl leading-none tracking-[-1px] mb-10 max-w-lg">
@@ -240,7 +220,7 @@
                     </h2>
                     
                     <div class="prose prose-invert text-lg text-[#F8F1E9]/90 max-w-none">
-                        <p>At Aurelia, we believe coffee is more than a beverage — it is a bridge between people and place. Our journey begins with direct relationships with smallholder farmers practicing regenerative agriculture across Ethiopia, Colombia, and Kenya.</p>
+                        <p>At Jaikee Jiger Coffee, we believe coffee is more than a beverage — it is a bridge between people and place. Our journey begins with direct relationships with smallholder farmers practicing regenerative agriculture across Ethiopia, Colombia, and Kenya.</p>
                         <p>Our master roasters, each with over twenty years of experience, treat every bean with the reverence it deserves. We roast in small batches using a vintage 1948 German Probat to preserve the unique character of each origin.</p>
                         <p>Every cup tells a complete farm-to-cup story: who grew it, how it was processed, and the exact day it was roasted. This transparency is our promise to you.</p>
                     </div>
@@ -264,7 +244,6 @@
                     </div>
                 </div>
                 
-                <!-- Right visual -->
                 <div class="md:col-span-5">
                     <div class="aspect-square bg-[#1F3A2E] rounded-3xl p-2 shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" 
@@ -275,7 +254,6 @@
                 </div>
             </div>
             
-            <!-- Values -->
             <div class="mt-24">
                 <h3 class="text-center text-[#C9A77B] uppercase text-sm tracking-[2px] mb-12">What sets us apart</h3>
                 <div class="grid md:grid-cols-3 gap-8">
@@ -299,7 +277,6 @@
         </div>
     </section>
 
-    <!-- MENU PAGE -->
     <section id="menu-page" class="page hidden min-h-screen pt-24 pb-16">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="flex justify-between items-baseline mb-12">
@@ -313,11 +290,9 @@
                 </div>
             </div>
             
-            <!-- Signature Blends -->
             <div class="mb-16">
                 <h3 class="uppercase text-xs tracking-widest text-[#C9A77B] mb-6">Signature Blends • Whole Bean</h3>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Blend 1 -->
                     <div class="menu-card bg-[#F8F1E9]/5 rounded-3xl p-8 flex flex-col">
                         <div class="flex justify-between">
                             <div>
@@ -334,7 +309,6 @@
                         </div>
                     </div>
                     
-                    <!-- Blend 2 -->
                     <div class="menu-card bg-[#F8F1E9]/5 rounded-3xl p-8 flex flex-col">
                         <div class="flex justify-between">
                             <div>
@@ -351,7 +325,6 @@
                         </div>
                     </div>
                     
-                    <!-- Blend 3 -->
                     <div class="menu-card bg-[#F8F1E9]/5 rounded-3xl p-8 flex flex-col">
                         <div class="flex justify-between">
                             <div>
@@ -364,13 +337,12 @@
                             </div>
                         </div>
                         <div class="mt-auto pt-8 border-t border-[#C9A77B]/10 text-sm">
-                            Blackcurrant • Tomato vine • Bright &amp; juicy
+                            Blackcurrant • Tomato vine • Bright & juicy
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Espresso Drinks -->
             <div class="mb-16">
                 <h3 class="uppercase text-xs tracking-widest text-[#C9A77B] mb-6">Espresso Bar</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -386,7 +358,7 @@
                     </div>
                     <div class="bg-white/5 rounded-3xl px-6 py-6 text-center">
                         <div class="font-medium">Cortado</div>
-                        <div class="text-xs text-[#F8F1E9]/60 mt-1">Equal parts espresso &amp; steamed milk</div>
+                        <div class="text-xs text-[#F8F1E9]/60 mt-1">Equal parts espresso & steamed milk</div>
                         <div class="mt-8 text-3xl">$5</div>
                     </div>
                     <div class="bg-white/5 rounded-3xl px-6 py-6 text-center">
@@ -397,7 +369,6 @@
                 </div>
             </div>
             
-            <!-- Pastries -->
             <div>
                 <h3 class="uppercase text-xs tracking-widest text-[#C9A77B] mb-6">Gourmet Pastries</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -422,44 +393,37 @@
         </div>
     </section>
 
-    <!-- GALLERY PAGE -->
     <section id="gallery-page" class="page hidden min-h-screen pt-24 pb-16">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <div class="uppercase text-[#C9A77B] text-sm tracking-[2px] mb-8">Moments at Aurelia</div>
+            <div class="uppercase text-[#C9A77B] text-sm tracking-[2px] mb-8">Moments at SWEGER</div>
             <h2 class="heading-font text-6xl mb-16">Inside our sanctuary</h2>
             
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Image 1: Interior -->
                 <div class="gallery-img aspect-video bg-[#1F3A2E] rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" 
                          alt="Cozy interior with dim lighting and rustic wood"
                          class="w-full h-full object-cover">
                 </div>
-                <!-- Image 2: Latte Art -->
                 <div class="gallery-img aspect-video bg-[#1F3A2E] rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" 
                          alt="Latte art in ceramic cup"
                          class="w-full h-full object-cover">
                 </div>
-                <!-- Image 3: Exterior -->
                 <div class="gallery-img aspect-video bg-[#1F3A2E] rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1559925394-5e1d6e8f1f0a" 
                          alt="Elegant urban exterior at dusk"
                          class="w-full h-full object-cover">
                 </div>
-                <!-- Image 4: Pour over detail -->
                 <div class="gallery-img aspect-video bg-[#1F3A2E] rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" 
                          alt="Slow pour-over in progress"
                          class="w-full h-full object-cover">
                 </div>
-                <!-- Image 5: Interior warm tones -->
                 <div class="gallery-img aspect-video bg-[#1F3A2E] rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa" 
                          alt="Rustic tables and forest green accents"
                          class="w-full h-full object-cover">
                 </div>
-                <!-- Image 6: Beans and brass scale -->
                 <div class="gallery-img aspect-video bg-[#1F3A2E] rounded-3xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e" 
                          alt="Fresh roasted beans on brass scale"
@@ -468,22 +432,19 @@
             </div>
             
             <p class="text-center text-[#F8F1E9]/60 text-sm mt-12 max-w-md mx-auto">
-                Every corner of Aurelia was designed to feel like a private living room — warm, intimate, and timeless.
+                Every corner of SWEGER was designed to feel like a private living room — warm, intimate, and timeless.
             </p>
         </div>
     </section>
 
-    <!-- SHOP / CONTACT PAGE -->
     <section id="shop-page" class="page hidden min-h-screen pt-24 pb-16">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="grid lg:grid-cols-12 gap-16">
-                <!-- Shop Section -->
                 <div class="lg:col-span-7">
                     <h2 class="heading-font text-5xl mb-2">Shop Our Beans</h2>
                     <p class="text-[#F8F1E9]/70 mb-10">Whole bean coffee shipped fresh within 48 hours of roasting. Free shipping on orders over $75.</p>
                     
                     <div class="space-y-6">
-                        <!-- Product 1 -->
                         <div class="flex gap-6 bg-[#F8F1E9]/5 rounded-3xl p-6 items-center">
                             <div class="w-28 h-28 bg-[#1F3A2E] rounded-2xl flex-shrink-0 overflow-hidden">
                                 <img src="https://picsum.photos/id/870/300/300" alt="Ethiopian Legacy bag" class="w-full h-full object-cover">
@@ -501,7 +462,6 @@
                             </div>
                         </div>
                         
-                        <!-- Product 2 -->
                         <div class="flex gap-6 bg-[#F8F1E9]/5 rounded-3xl p-6 items-center">
                             <div class="w-28 h-28 bg-[#1F3A2E] rounded-2xl flex-shrink-0 overflow-hidden">
                                 <img src="https://picsum.photos/id/1005/300/300" alt="Colombian Harmony bag" class="w-full h-full object-cover">
@@ -521,18 +481,16 @@
                     </div>
                 </div>
                 
-                <!-- Contact + Map -->
                 <div class="lg:col-span-5">
                     <div class="sticky top-24">
                         <h2 class="heading-font text-5xl mb-8">Visit Our Sanctuary</h2>
                         
                         <div class="bg-[#F8F1E9]/5 rounded-3xl p-8 mb-8">
                             <div class="flex justify-between text-sm mb-6">
-                                <div>123 Brass Lane<br>The District, Portland, OR 97209</div>
+                                <div>123 Brass Lane<br>The District, Portland, OR 97209<br>jaikeejiger1@gmail.com</div>
                                 <div class="text-right">Open Daily<br>7am – 7pm</div>
                             </div>
                             
-                            <!-- Google Maps Embed (NYC / Portland style urban location) -->
                             <iframe width="100%" height="240" frameborder="0" scrolling="no" 
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.123456789!2d-122.6789!3d45.521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b8b2c2b2b2b%3A0x8f8f8f8f8f8f8f8f!2sPearl%20District%20Portland!5e0!3m2!1sen!2sus!4v1700000000000" 
                                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -544,18 +502,18 @@
                             </div>
                         </div>
                         
-                        <!-- Contact Form -->
                         <h3 class="uppercase tracking-widest text-[#C9A77B] text-sm mb-4">Say Hello</h3>
                         <form onsubmit="handleSubmit(event)" class="space-y-6">
                             <input type="text" placeholder="YOUR NAME" 
-                                   class="w-full bg-transparent border border-[#C9A77B]/30 focus:border-[#C9A77B] rounded-3xl px-6 py-5 text-sm">
+                                   class="w-full bg-transparent border border-[#C9A77B]/30 focus:border-[#C9A77B] rounded-3xl px-6 py-5 text-sm outline-none">
                             <input type="email" placeholder="EMAIL ADDRESS" 
-                                   class="w-full bg-transparent border border-[#C9A77B]/30 focus:border-[#C9A77B] rounded-3xl px-6 py-5 text-sm">
-                            <textarea placeholder="YOUR MESSAGE" rows="4"
-                                      class="w-full bg-transparent border border-[#C9A77B]/30 focus:border-[#C9A77B] rounded-3xl px-6 py-5 text-sm resize-none"></textarea>
+                                   class="w-full bg-transparent border border-[#C9A77B]/30 focus:border-[#C9A77B] rounded-3xl px-6 py-5 text-sm outline-none">
+                            <textarea placeholder="YOUR MESSAGE" rows="4" 
+                                   class="w-full bg-transparent border border-[#C9A77B]/30 focus:border-[#C9A77B] rounded-3xl px-6 py-5 text-sm resize-none outline-none"></textarea>
+                            
                             <button type="submit" 
-                                    class="w-full py-6 bg-[#C9A77B] text-[#2C1F1A] uppercase text-sm tracking-widest font-medium rounded-3xl">
-                                SEND MESSAGE
+                                    class="w-full brass-button px-8 py-5 border border-[#C9A77B] text-[#C9A77B] hover:bg-[#C9A77B] hover:text-[#2C1F1A] rounded-3xl text-sm font-medium uppercase tracking-widest mt-2">
+                                Send Message
                             </button>
                         </form>
                     </div>
@@ -564,201 +522,117 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-[#1F2A22] text-[#F8F1E9]/70 py-16">
-        <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-y-10">
-            <div class="md:col-span-4">
-                <div class="flex items-center gap-x-3 mb-6">
-                    <div class="w-8 h-8 rounded-full bg-[#C9A77B] flex items-center justify-center text-[#2C1F1A]">☕</div>
-                    <span class="heading-font text-3xl">AURELIA</span>
-                </div>
-                <p class="text-sm max-w-xs">Sophisticated coffee for those who appreciate the quiet luxury of a perfectly brewed cup.</p>
-                <div class="flex gap-x-6 mt-8 text-xs">
-                    <a href="#" class="hover:text-[#C9A77B]">INSTAGRAM</a>
-                    <a href="#" class="hover:text-[#C9A77B]">NEWSLETTER</a>
-                    <a href="#" class="hover:text-[#C9A77B]">JOURNAL</a>
-                </div>
+    <footer class="border-t border-[#C9A77B]/10 py-10 mt-auto">
+        <div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-x-3">
+                <div class="w-6 h-6 rounded-full bg-[#C9A77B] flex items-center justify-center text-[#2C1F1A] text-xs font-bold">☕</div>
+                <span class="heading-font text-xl tracking-[-0.5px] text-[#F8F1E9]">SWEGER</span>
             </div>
-            
-            <div class="md:col-span-2 text-sm">
-                <div class="uppercase text-[#C9A77B] text-xs mb-4">NAVIGATION</div>
-                <ul class="space-y-3">
-                    <li onclick="navigateTo('home')" class="cursor-pointer">Home</li>
-                    <li onclick="navigateTo('about')" class="cursor-pointer">About Us</li>
-                    <li onclick="navigateTo('menu')" class="cursor-pointer">Menu</li>
-                    <li onclick="navigateTo('gallery')" class="cursor-pointer">Gallery</li>
-                </ul>
+            <div class="text-[#F8F1E9]/50 text-xs tracking-widest uppercase">
+                &copy; 2026 Jaikee Jiger. All Rights Reserved.
             </div>
-            
-            <div class="md:col-span-2 text-sm">
-                <div class="uppercase text-[#C9A77B] text-xs mb-4">CONTACT</div>
-                <p>123 Brass Lane<br>The District, Portland, OR</p>
-                <p class="mt-6">(503) 555-0198</p>
-                <p>hello@aureliacoffee.com</p>
-            </div>
-            
-            <div class="md:col-span-4 text-xs">
-                <p class="mb-6">© 2026 AURELIA COFFEE CO. All Rights Reserved.</p>
-                <p class="text-[#C9A77B]/60">Hand-roasted with integrity. Delivered with care.</p>
-                <p class="mt-auto pt-8 text-[#F8F1E9]/40">Designed as a premium demonstration website. Replace video and images with your own assets for production use.</p>
+            <div class="flex gap-x-6 text-[#F8F1E9]/60 text-xs tracking-widest uppercase">
+                <a href="#" class="hover:text-[#C9A77B]">Instagram</a>
+                <a href="#" class="hover:text-[#C9A77B]">Journal</a>
+                <a href="#" class="hover:text-[#C9A77B]">Wholesale</a>
             </div>
         </div>
     </footer>
 
     <script>
-        /**
-         * Main Tailwind configuration
-         */
-        function initializeTailwind() {
-            tailwind.config = {
-                content: ["./**/*.{html,js}"],
-                theme: {
-                    extend: {
-                        colors: {
-                            deep: '#2C1F1A',
-                            cream: '#F8F1E9',
-                            forest: '#1F3A2E',
-                            brass: '#C9A77B'
-                        }
-                    }
+        // --- Navigation Logic ---
+        function navigateTo(pageId) {
+            // 1. Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.add('hidden');
+                page.classList.remove('flex'); // Remove flex from home
+            });
+            
+            // 2. Show target page
+            const targetPage = document.getElementById(pageId + '-page');
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+                // Home page relies on flexbox for vertical centering
+                if (pageId === 'home') {
+                    targetPage.classList.add('flex');
                 }
             }
+
+            // 3. Update active states on desktop navigation
+            document.querySelectorAll('nav a[data-page]').forEach(link => {
+                if (link.getAttribute('data-page') === pageId) {
+                    link.classList.add('text-[#C9A77B]');
+                    link.classList.remove('text-[#F8F1E9]');
+                } else {
+                    link.classList.remove('text-[#C9A77B]');
+                    link.classList.add('text-[#F8F1E9]');
+                }
+            });
+
+            // 4. Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        
-        /**
-         * Page navigation system (5 distinct pages)
-         */
-        function navigateTo(page) {
-            const pages = {
-                home: document.getElementById('home-page'),
-                about: document.getElementById('about-page'),
-                menu: document.getElementById('menu-page'),
-                gallery: document.getElementById('gallery-page'),
-                shop: document.getElementById('shop-page')
-            }
-            
-            // Hide all pages
-            Object.values(pages).forEach(p => p.classList.add('hidden'))
-            
-            // Show selected page
-            if (pages[page]) {
-                pages[page].classList.remove('hidden')
-                // Scroll to top smoothly
-                window.scrollTo({ top: 0, behavior: 'smooth' })
-            }
-            
-            // Close mobile menu if open
-            const mobileMenu = document.getElementById('mobile-menu')
-            if (mobileMenu.classList.contains('flex')) toggleMobileMenu()
-        }
-        
-        /**
-         * Mobile menu toggle
-         */
+
+        // Initialize Home as the active link on load
+        document.querySelector('nav a[data-page="home"]')?.classList.add('text-[#C9A77B]');
+
+        // --- Mobile Menu Toggle ---
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu')
-            const icon = document.getElementById('hamburger-icon')
-            
-            if (menu.classList.contains('hidden')) {
-                menu.style.display = 'flex'
-                menu.classList.remove('hidden')
-                icon.innerHTML = `
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6h12v12" />
-                `
-            } else {
-                menu.style.display = 'none'
-                menu.classList.add('hidden')
-                icon.innerHTML = `
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                `
-            }
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         }
+
+        // --- Shopping Cart Logic ---
+        let cartCount = 0;
         
-        /**
-         * Fake cart functionality
-         */
-        let cartCount = 0
-        
-        function addToCart(btn) {
-            cartCount++
-            document.getElementById('cart-count').textContent = cartCount
+        function addToCart(button) {
+            // Increment count
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
             
-            // Visual feedback
-            const originalText = btn.textContent
-            btn.textContent = '✓ ADDED'
-            btn.style.backgroundColor = '#1F3A2E'
-            btn.style.color = '#F8F1E9'
+            // Visual feedback on the button
+            const originalText = button.innerText;
+            button.innerText = 'ADDED TO BAG';
+            button.classList.add('bg-[#C9A77B]', 'text-[#2C1F1A]');
             
+            // Revert button after 2 seconds
             setTimeout(() => {
-                btn.textContent = originalText
-                btn.style.backgroundColor = ''
-                btn.style.color = ''
-            }, 1500)
-            
-            // Optional toast
-            showToast('Bag updated • ' + cartCount + ' item' + (cartCount > 1 ? 's' : ''))
+                button.innerText = originalText;
+                button.classList.remove('bg-[#C9A77B]', 'text-[#2C1F1A]');
+            }, 2000);
         }
-        
+
         function toggleCart() {
-            if (cartCount > 0) {
-                alert('🛍️ Your cart contains ' + cartCount + ' bag(s) of premium coffee.\n\n(This is a demo — real checkout would go here.)')
+            if (cartCount === 0) {
+                alert("Your coffee bag is currently empty.");
             } else {
-                alert('Your bag is empty.\nBrowse our beans in the Shop section!')
+                alert(`You have ${cartCount} item(s) in your bag. Checkout functionality coming soon!`);
             }
         }
-        
-        function showToast(message) {
-            const toast = document.createElement('div')
-            toast.style.cssText = 'position:fixed; bottom:24px; right:24px; background:#C9A77B; color:#2C1F1A; padding:16px 24px; border-radius:9999px; box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.2); font-size:14px; z-index:9999;'
-            toast.textContent = message
-            document.body.appendChild(toast)
+
+        // --- Contact Form Submission ---
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent page reload
+            
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            
+            // Simulate sending state
+            submitBtn.innerText = 'SENDING...';
             
             setTimeout(() => {
-                toast.style.transition = 'all 0.3s ease'
-                toast.style.opacity = '0'
-                toast.style.transform = 'translateY(20px)'
-                setTimeout(() => toast.remove(), 300)
-            }, 2800)
-        }
-        
-        /**
-         * Fake form submission
-         */
-        function handleSubmit(e) {
-            e.preventDefault()
-            const btn = e.target.querySelector('button')
-            const original = btn.textContent
-            btn.textContent = 'THANK YOU — WE’LL REPLY SOON'
-            btn.disabled = true
-            
-            setTimeout(() => {
-                alert('✅ Message received. Our team will reply within 24 hours.')
-                e.target.reset()
-                btn.textContent = original
-                btn.disabled = false
-                navigateTo('home')
-            }, 1200)
-        }
-        
-        /**
-         * Initialize everything when the page loads
-         */
-        window.onload = function() {
-            initializeTailwind()
-            
-            // Ensure home page is visible by default
-            console.log('%c✅ Aurelia Coffee 5-page premium website ready!', 'color:#C9A77B; font-family:Playfair Display; font-size:18px')
-            
-            // Optional: Auto-play hero video with better mobile controls
-            const video = document.getElementById('hero-video')
-            if (video) {
-                video.play().catch(() => {
-                    console.log('Video autoplay prevented — user interaction required on some devices')
-                })
-            }
-            
-            console.log('Sophisticated, artisan, modern coffee website loaded with dark + warm palette (deep brown, cream, forest green, brass).')
-            console.log('Replace the video src in the hero with a real slow-motion pour-over clip for full effect.')
+                // Success state
+                submitBtn.innerText = 'MESSAGE SENT';
+                submitBtn.classList.add('bg-[#C9A77B]', 'text-[#2C1F1A]');
+                form.reset();
+                
+                // Revert button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.innerText = originalText;
+                    submitBtn.classList.remove('bg-[#C9A77B]', 'text-[#2C1F1A]');
+                }, 3000);
+            }, 1000); // 1 second simulated delay
         }
     </script>
 </body>
